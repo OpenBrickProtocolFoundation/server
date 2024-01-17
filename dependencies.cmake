@@ -18,8 +18,13 @@ function(setup_dependencies)
             "GSL_TEST OFF"
     )
     CPMAddPackage(
+            NAME TL_EXPECTED
+            GITHUB_REPOSITORY TartanLlama/expected
+            VERSION 1.1.0
+    )
+    CPMAddPackage(
             NAME C2K_SOCKETS
             GITHUB_REPOSITORY mgerhold/sockets
-            VERSION 0.1.15
+            VERSION 0.2.0
     )
 endfunction()

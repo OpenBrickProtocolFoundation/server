@@ -1,0 +1,3 @@
+[submodule "vendor/simulator"]
+	path = vendor/simulator
+	url = git@github.com:OpenBrickProtocolFoundation/simulator.git

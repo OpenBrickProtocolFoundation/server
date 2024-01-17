@@ -8,4 +8,5 @@ setup_dependencies()
 
 include(project_options.cmake)
 
+add_subdirectory(vendor)
 add_subdirectory(src)
