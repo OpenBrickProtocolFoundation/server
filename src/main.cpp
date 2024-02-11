@@ -159,7 +159,7 @@ static void process_client(std::stop_token const& stop_token, c2k::ClientSocket 
     spdlog::info("client {}:{} disconnected", socket.remote_address().address, socket.remote_address().port);
 }
 
-int main(int argc, char** argv) {
+int main([[maybe_unused]] int argc, char** argv) {
     assert(argc >= 2);
     auto const lobby_port = static_cast<std::uint16_t>(std::atoi(argv[1]));
     auto lobby = c2k::Sockets::create_client(c2k::AddressFamily::Ipv4, "127.0.0.1", lobby_port);
